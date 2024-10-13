@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(270deg, #ffd0d0, #ffffff, #ffdbdb, #ffffff);
-  background-size: 800% 800%;
+  background: linear-gradient(90deg, #095672, #000000, #773912);
+  background-size: 600% 600%;
 
-  -webkit-animation: bg-animation 24s ease infinite;
-  -moz-animation: bg-animation 24s ease infinite;
-  animation: bg-animation 24s ease infinite;
+  -webkit-animation: bg-animation 60s ease infinite;
+  -moz-animation: bg-animation 60s ease infinite;
+  animation: bg-animation 60s ease infinite;
 }
 
 @-webkit-keyframes bg-animation {

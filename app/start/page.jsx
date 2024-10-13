@@ -7,13 +7,13 @@ export default function Start() {
       <Image
         width={500}
         height={300}
-        src={"/bashaway-logo.png"}
-        className="mb-14"
+        src={"/xtreme logo.svg"}
+        className="mb-14 -ml-4"
       />
       <Link href="/countdown">
         {" "}
-        <button className="bg-black text-white rounded-full text-[28px] px-6 py-3">
-          Start Competition
+        <button className="bg-white drop-shadow-white-glow text-black rounded-2xl text-[24px] px-8 py-4 font-semibold">
+          Initiate Competition
         </button>
       </Link>
       <Link href="/" className="h-20 w-full  absolute bottom-0"></Link>

@@ -32,7 +32,9 @@ export default function Countdown() {
     } else {
       // Set end time for 6 hours later
       endTime = new Date();
-      endTime.setHours(endTime.getHours() + 6);
+      endTime.setHours(
+        endTime.getHours() + Number(process.env.NEXT_PUBLIC_DURATION)
+      );
     }
 
     // Initialize timeLeft
@@ -64,11 +66,11 @@ export default function Countdown() {
         <Image
           width={300}
           height={300}
-          src={"/bashaway-logo.png"}
+          src={"/xtreme logo.svg"}
           className="mb-20"
         />
         <h1 className="text-[64px] -mr-6 animate-pulse font-bold text-center">
-          Time is up ⏰
+          Time's up ⏱️
         </h1>
       </div>
     );
@@ -84,24 +86,24 @@ export default function Countdown() {
       <Image
         width={300}
         height={300}
-        src={"/bashaway-logo.png"}
+        src={"/xtreme logo.svg"}
         className="mb-20"
       />
-      <div className="grid grid-flow-col gap-10 text-center auto-cols-max">
+      <div className="grid grid-flow-col gap-10 text-center auto-cols-max text-white">
         <div className="flex flex-col text-[24px] uppercase">
-          <span className="countdown font-mono text-[100px]">
+          <span className="countdown font-mono text-[120px]">
             <span style={{ "--value": hours }}></span>
           </span>
           hrs
         </div>
         <div className="flex flex-col text-[24px] uppercase">
-          <span className="countdown font-mono text-[100px]">
+          <span className="countdown font-mono text-[120px]">
             <span style={{ "--value": minutes }}></span>
           </span>
           mins
         </div>
         <div className="flex flex-col text-[24px] uppercase">
-          <span className="countdown font-mono text-[100px]">
+          <span className="countdown font-mono text-[120px]">
             <span style={{ "--value": seconds }}></span>
           </span>
           secs
